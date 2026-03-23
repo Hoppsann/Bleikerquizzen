@@ -17,9 +17,36 @@ ul {
     justify-content: space-evenly;
     padding: 10px;
     align-items: center;
+    margin: 0;
 }
 
 ul li a {
     text-decoration: none;
     color: white;
+}
+
+
+
+
+
+.hero {
+    height: 15rem;
+    width: 100%;
+    background-color: green;
+    text-align: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+#herobuttons {
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+}
+
+footer {
+    display: flex;
+    background-color: red;
+    display: flex;
+    margin-top: auto;
 }
