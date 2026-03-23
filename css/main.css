@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 5rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(26, 46, 68);
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
