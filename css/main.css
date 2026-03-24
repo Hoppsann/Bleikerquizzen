@@ -3,11 +3,18 @@ body {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
 }
 
 * {
     box-sizing: border-box;
 }
+
+
+:root {
+    --header-footer: rgb(26, 46, 68);
+}
+
 
 img {
     width: 5rem;
@@ -16,7 +23,7 @@ img {
 ul {
     display: flex;
     flex-direction: row;
-    background-color: rgb(26, 46, 68);
+    background-color: var(--header-footer);
     list-style: none;
     justify-content: space-evenly;
     padding: 10px;
@@ -24,7 +31,7 @@ ul {
     margin: 0;
 }
 
-ul li a {
+a {
     text-decoration: none;
     color: white;
 }
@@ -48,31 +55,66 @@ ul li a {
     gap: 50px;
 }
 
+
+
+
+.info {
+    width: 100%;
+    height: 20rem;
+    background-color: red;
+    padding: 10px;
+    display: flex;
+}
+
+#infoleft p {
+    margin: 0;
+}
+
+#infoleft {
+    width: 50%;
+    height: 100%;
+    background-color: rgb(248, 100, 100);
+    display: flex;
+    flex-direction: column;
+}
+
+#infoLeft button {
+    width: 10rem;
+    height: 2rem;
+    margin-top: auto;   /* pushes to bottom */
+    margin-right: 2.5rem; /* space from right edge */
+    margin-bottom: 2rem;/* space from bottom edge */
+    align-self: flex-end; /* move to right */
+}
+
+#inforight {
+    background-color: brown;
+    width: 50%;
+}
+
+
+
 footer {
     display: flex;
-    background-color: red;
-    display: flex;
+    background-color: var(--header-footer);
     margin-top: auto;
-    height: 150px;
+    height: 10rem;
     text-align: center;
     align-items: center;
+    padding: 10px;
 }
 
 
-#footerleft {
-    background-color: rgb(48, 135, 250);
-    width:calc(100%/3);
-    height: 100%;
+#footerleft img {
+    width: 15rem;
 }
 
-#footermiddle {
-    background-color: rgb(143, 220, 20);
-    width:calc(100%/3);
+#footerLeft,
+#footerMiddle,
+#footerRight {
     height: 100%;
-}
-
-#footerright {
-    background-color: rgb(255, 0, 238);
     width:calc(100%/3);
-    height: 100%;
+    display: flex;
+    align-items: center;      /* vertical center */
+    justify-content: center;  /* horizontal center */
 }
