@@ -88,9 +88,13 @@ a {
 }
 
 #inforight {
+    display: flex;
     background-color: brown;
     width: 50%;
+    justify-content: center;
+    align-items: center;
 }
+
 
 
 
