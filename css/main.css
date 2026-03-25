@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: black;
+    /* background-color: black; */
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
@@ -13,8 +13,21 @@ body {
 
 :root {
     --header-footer: rgb(26, 46, 68);
-    --maincolor1: rgb(38, 61, 85);
-    --maincolor2: rgb(68, 104, 141);
+    --maincolor1: rgba(0, 0, 0, 0);
+    --maincolor2: rgba(0, 0, 0, 0.2);
+    --stripebgcol1: rgb(42, 67, 95);
+    --stripebgcol2: rgb(43, 76, 109);
+}
+
+body {
+    margin: 0;
+    background: repeating-linear-gradient(
+     45deg,
+     var(--stripebgcol1),
+     var(--stripebgcol1) 1vw,
+     var(--stripebgcol2) 1vw,
+     var(--stripebgcol2) 2vw);
+    position: relative;
 }
 
 
@@ -64,6 +77,7 @@ a {
     width: 100%;
     height: 20rem;
     background-color: var(--maincolor2);
+    backdrop-filter: blur(2px);
     padding: 10px;
     display: flex;
 }
