@@ -176,7 +176,7 @@ function checkAnswer(buttonid, correctAnswer) {
     chosenAnswer = true;
 
     if(chosenAnswer) {
-        nextButton.innerHTML = `<button onClick="nextQuestion()">Next</button>`;
+        nextButton.innerHTML = `<button onClick="nextQuestion()">Neste</button>`;
     }
 
 
