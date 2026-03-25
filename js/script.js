@@ -101,41 +101,56 @@ let quiz = [
   },
 ];
 
+let chosenAnswer = false;
+let feedback = document.getElementById("feedback");
+let count = 0;
+let nextButton = document.getElementById("next");
+let points = 0;
 
 
 function loadQuiz() {
     console.log("quiz loaded!");
-
-    let firstElement = quiz[0];
-
-    console.log(firstElement);
-
-    let question = document.getElementById("question");
-    let buttonsContainer = document.getElementById("quizbuttons");
-
-
-    question.textContent += `${firstElement.question}`;
-
-    let buttons = firstElement.choices;
     
-    buttons.forEach(button => {
-        buttonsContainer.innerHTML += `<button id="${button.id}" onclick="checkAnswer(${button.id}, ${firstElement.correctAnswer})">${button.label}</button>`;
-    })
-}
+        if(quiz.length <= count) {
+            document.getElementById("quizhero").innerHTML="";
 
-let chosenAnswer = false;
+            document.getElementById("results").style = "";
+            document.getElementById("points").innerHTML = `${points}/${quiz.length} rett`;
+
+        } else {
+            let quizquestion = quiz[count];
+            
+            console.log(quizquestion);
+        
+            let question = document.getElementById("question");
+            let buttonsContainer = document.getElementById("quizbuttons");
+            buttonsContainer.innerHTML = "";
+            
+            
+            question.textContent = `${quizquestion.question}`;
+        
+            let buttons = quizquestion.choices;
+            
+            buttons.forEach(button => {
+                buttonsContainer.innerHTML += `<button id="${button.id}" onclick="checkAnswer(${button.id}, ${quizquestion.correctAnswer})">${button.label}</button>`;
+            })
+        }
+
+}
 
 
 
 function checkAnswer(buttonid, correctAnswer) {
     console.log(buttonid, correctAnswer);
+    count++;
+    
 
-    let feedback = document.getElementById("feedback");
     let isCorrect = buttonid === correctAnswer;
 
     console.log(isCorrect);
 
     if(isCorrect && !chosenAnswer) {
+        points++;
         feedback.innerHTML = "Du hadde rett!"
         document.getElementById(buttonid).setAttribute("class","correct");
     } else if (!isCorrect && !chosenAnswer) {
@@ -146,15 +161,22 @@ function checkAnswer(buttonid, correctAnswer) {
     chosenAnswer = true;
 
     if(chosenAnswer) {
-        let nextButton = document.getElementById("next")
-
-        nextButton.innerHTML += `<button onClick="nextQuestion()">Next</button>`
+        nextButton.innerHTML = `<button onClick="nextQuestion()">Next</button>`;
     }
+
 
 }
 
 function nextQuestion() {
     
+    loadQuiz();
+    chosenAnswer = false;
+    feedback.textContent = "";
+    nextButton.innerHTML = "";
+    
 }
+
+
+
 
 loadQuiz();
