@@ -145,13 +145,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 70rem;
+    width: 50rem;
     gap: 1rem;
 }
 
 #quizbuttons button {
     border-radius: 1rem;
     font-size: 3rem;
-    width: 30rem;
-    height: 10rem;
+    width: 20rem;
+    height: 7rem;
 }
