@@ -207,7 +207,6 @@ button:hover {
     height: 40rem;
     background-color: var(--maincolor1);
     display: flex;
-    align-items: center;
     flex-direction: column;
     text-align: center;
 }
@@ -219,21 +218,45 @@ button:hover {
 .quizhero p {font-size: 2rem;}
 .quizhero h1 {font-size: 4rem; margin: 10px;}
 
+#quiz {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 #quizbuttons {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 2rem;
     width: 50rem;
-    gap: 1rem;
 }
 
 #quizbuttons button {
     border-radius: 1rem;
     font-size: 3rem;
-    width: 20rem;
+    width: 24rem;
     height: 7rem;
+    padding: 2rem;
 }
 
+#next {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 5rem;
+}
+
+#next button {
+    width: 10rem;
+    font-size: 2rem;
+}
+
+.correct {
+    background-color: rgba(52, 143, 217, 0.75);
+}
+
+.wrong {
+    background-color: rgb(146, 146, 146);
+}
 
 /*//////////////////////////////////////////////*/
 

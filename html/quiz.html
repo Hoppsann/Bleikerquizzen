@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/script.js" defer></script>
 </head>
 <body>
     <ul>
@@ -17,14 +18,15 @@
     <div class="quizhero">
         <div>
             <h1>Quiz</h1>
-            <p>hva er ost</p>
+            <p id="question"></p>
         </div>
         
-        <div id="quizbuttons">
-            <button>knapp 1</button>
-            <button>knapp 2</button>
-            <button>knapp 3</button>
-            <button>knapp 4</button>
+        <div id="quiz">
+          <div id="quizbuttons"></div>
+        </div>
+        <p id="feedback"></p>
+
+        <div id="next">
         </div>
     </div>
     
