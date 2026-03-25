@@ -38,7 +38,7 @@ body {
 
 
 img {
-    width: 5rem;
+    width: 10rem;
 }
 
 ul {
@@ -47,7 +47,7 @@ ul {
     background-color: var(--header-footer);
     list-style: none;
     justify-content: space-evenly;
-    padding: 10px;
+    padding: 1.5rem;
     align-items: center;
     margin: 0;
 }
@@ -55,6 +55,17 @@ ul {
 a {
     text-decoration: none;
     color: white;
+}
+
+ul a {
+    font-size: 1.5rem;
+}
+
+
+li {transition: 0.2s;}
+
+li:hover {
+    transform: scale(1.2);
 }
 
 
@@ -76,6 +87,9 @@ a {
     gap: 50px;
 }
 
+#mainheader {
+    font-family: 'alphabetsoup';
+}
 
 
 
@@ -154,7 +168,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.3s;
+    transition: 0.2s;
     background-color: #ed1c23c7;
     border: 1.5px solid rgba(255, 255, 255, 0.553);
     backdrop-filter: blur(10px);
