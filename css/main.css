@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    /* background-color: black; */
+    background-color: var(--maincolor1);
     color: white;
     font-family: 'nunito';
     font-size: 1.2rem;
@@ -14,10 +14,8 @@ body {
 
 :root {
     --header-footer: rgb(26, 46, 68);
-    --maincolor1: rgba(0, 0, 0, 0);
-    --maincolor2: rgba(0, 0, 0, 0.2);
-    --stripebgcol1: rgb(42, 67, 95);
-    --stripebgcol2: rgb(43, 76, 109);
+    --maincolor1: rgb(42, 67, 95);
+    --maincolor2: rgb(43, 76, 109);
 }
 
 @font-face {
@@ -27,7 +25,7 @@ body {
 
 
 
-body {
+/* body {
     margin: 0;
     background: repeating-linear-gradient(
      45deg,
@@ -36,7 +34,7 @@ body {
      var(--stripebgcol2) 1vw,
      var(--stripebgcol2) 2vw);
     position: relative;
-}
+} */
 
 
 img {
@@ -157,7 +155,7 @@ button {
     justify-content: center;
     align-items: center;
     transition: 0.3s;
-    background-color: transparent;
+    background-color: #ed1c23c7;
     border: 1.5px solid rgba(255, 255, 255, 0.553);
     backdrop-filter: blur(10px);
     color: white;
