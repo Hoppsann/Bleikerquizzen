@@ -62,14 +62,30 @@ ul a {
 }
 
 
-li {transition: 0.2s;}
+li {
+    transition: 0.2s;
+    position: relative;
+}
 
 li:hover {
     transform: scale(1.2);
 }
 
+.hoverline::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0%;
+    transform: translateX(-50%);
+    height: 1px;
+    background-color: white;
+    transition: width 0.6s ease;
+}
 
-
+.hoverline:hover::after {
+    width: 100%;
+}
 
 
 .hero {
