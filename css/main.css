@@ -204,11 +204,12 @@ button:hover {
 
 .quizhero {
     width: 100%;
-    height: 40rem;
+    height: 5rem;
     background-color: var(--maincolor1);
     display: flex;
     flex-direction: column;
     text-align: center;
+    padding: 2rem;
 }
 
 .quizhero p, h1 {
@@ -225,10 +226,12 @@ button:hover {
 }
 
 #quizbuttons {
+    padding-top: 2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     width: 50rem;
+    justify-content: center;
 }
 
 #quizbuttons button {

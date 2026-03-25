@@ -99,6 +99,17 @@ let quiz = [
     ],
     correctAnswer: 2,
   },
+  
+  {
+    question: "",
+    video: "https://drive.google.com/file/d/1EOHYPGfF-V9nMWjCm49xbmbU2XD2QgX5/preview",
+    choices: [
+      { id: 1, label: "Kokken har lamme lår" },
+      { id: 2, label: "Ananas ringer i salaten" },
+      { id: 3, label: "Det er godt med isbiter" },
+    ],
+    correctAnswer: 3,
+  },
 ];
 
 let chosenAnswer = false;
@@ -126,6 +137,10 @@ function loadQuiz() {
             let buttonsContainer = document.getElementById("quizbuttons");
             buttonsContainer.innerHTML = "";
             
+            if(quizquestion.video !== undefined) {
+                let video = document.getElementById("video");
+                video.innerHTML = `<iframe id="video" src="${quizquestion.video}" width="426" height="240" allow="autoplay"></iframe>`
+            }
             
             question.textContent = `${quizquestion.question}`;
         
