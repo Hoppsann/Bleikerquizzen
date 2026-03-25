@@ -198,3 +198,58 @@ button:hover {
     width: 20rem;
     height: 7rem;
 }
+
+
+/*//////////////////////////////////////////////*/
+
+
+.grafiskhero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logografisk {
+    display: flex;
+}
+
+.grafiskhero img {
+    margin: 2rem;
+    width: 30rem;
+}
+
+#colorpallete {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    background-color: var(--maincolor2);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+#colorpallete div {
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    height: fit-content;
+    width: 15rem;
+    transition: 0.3s;
+}
+
+#colorpallete div:hover {
+    transform: scale(1.1);
+}
+
+#color1 {background-color: #ed1c24;}
+
+#color2 {background-color: #1c75bc;}
+
+#color3 {background-color: #000000;}
+
+#color4 {
+    background-color: #ffffff;
+    color: black;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.403);
+}
