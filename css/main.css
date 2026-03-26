@@ -141,6 +141,11 @@ li:hover {
     display: flex;
 }
 
+#inforight img {
+    width: 75%;
+} 
+
+
 #info2 {
     background-color: var(--maincolor1);
 }
