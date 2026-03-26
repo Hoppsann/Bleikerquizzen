@@ -395,3 +395,17 @@ button:hover {
 #nunito {
     font-family: 'nunito';
 }
+
+/*//////////////////////////////////////////////////////////*/
+
+.videohero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.videohero iframe {
+    width: calc(426px * 2);
+    height: calc(240px * 2);
+}
