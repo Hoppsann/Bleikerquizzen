@@ -409,3 +409,14 @@ button:hover {
     width: calc(426px * 2);
     height: calc(240px * 2);
 }
+
+
+/* ///////////////////////////////////////////////////////// */
+
+.somehero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
