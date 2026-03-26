@@ -71,6 +71,29 @@ li:hover {
     transform: scale(1.2);
 }
 
+#homeLeaderboardList li:hover,
+#leaderboardList li:hover {
+  transform: scale(1.05);
+}
+
+#homeLeaderboardList li:nth-child(1),
+#leaderboardList li:nth-child(1) {
+  background-color: rgba(255, 200, 0, 0.3);
+  border: 1px solid rgba(255, 200, 0, 0.5);
+}
+
+#homeLeaderboardList li:nth-child(2),
+#leaderboardList li:nth-child(2) {
+  background-color: rgba(180, 180, 180, 0.3);
+  border: 1px solid rgba(180, 180, 180, 0.5);
+}
+
+#homeLeaderboardList li:nth-child(3),
+#leaderboardList li:nth-child(3) {
+  background-color: rgba(180, 100, 30, 0.3);
+  border: 1px solid rgba(180, 100, 30, 0.5);
+}
+
 .hoverline::after {
     content: '';
     position: absolute;
@@ -118,8 +141,17 @@ li:hover {
     display: flex;
 }
 
+#info2 {
+    background-color: var(--maincolor1);
+}
+
+#infoleft h1 {
+    margin: 0rem 0rem 1rem 5rem;
+}
+
 #infoleft p {
-    margin: 2rem;
+    margin-top: 0;
+    margin-left: 5rem;
 }
 
 #infoleft {
@@ -132,10 +164,10 @@ li:hover {
 #infoLeft button {
     width: 10rem;
     height: 2rem;
-    margin-top: auto;   /* pushes to bottom */
-    margin-right: 2.5rem; /* space from right edge */
-    margin-bottom: 2rem;/* space from bottom edge */
-    align-self: flex-end; /* move to right */
+    margin-top: auto;
+    margin-right: 2.5rem;
+    margin-bottom: 2rem;
+    align-self: flex-end;
 }
 
 #inforight {
@@ -145,6 +177,14 @@ li:hover {
     align-items: center;
 }
 
+#homeleaderboard {
+    display: flex;
+    flex-direction: column;
+}
+
+#homeleaderboard h1 {
+    margin: 0rem;
+}
 
 
 
@@ -197,6 +237,34 @@ button:hover {
     transform: scale(1.1);
 }
 
+
+#homeleaderboard {
+  width: 100%;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+#homeleaderboard h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+#homeLeaderboardList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#homeLeaderboardList li {
+  font-size: 1.2rem;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 0.75rem;
+  padding: 0.4rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
 
 /*//////////////////////////////////////////////////////////////////////////////////////*/
 

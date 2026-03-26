@@ -226,4 +226,20 @@ function clearLeaderboard() {
   }
 }
 
+
+const homeList = document.getElementById("homeLeaderboardList");
+if (homeList) {
+  const scores = getScores().slice(0, 4);
+  if (scores.length === 0) {
+    homeList.innerHTML = "<li style='justify-content:center'>Ingen resultater ennå</li>";
+  } else {
+    homeList.innerHTML = scores.map((s, i) =>
+      `<li>
+        <span>${i + 1}. ${s.name}</span>
+        <span>${s.points}/${s.total}</span>
+      </li>`
+    ).join("");
+  }
+}
+
 loadQuiz();
