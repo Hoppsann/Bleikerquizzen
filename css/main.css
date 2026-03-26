@@ -204,13 +204,13 @@ button:hover {
 
 .quizhero {
     width: 100%;
-    height: 55rem;
+    height: fit-content;
+    min-height: 55rem;
     background-color: var(--maincolor1);
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 2rem;
-    justify-content: center;
 }
 
 .quizhero p, h1 {
@@ -232,18 +232,18 @@ button:hover {
     flex-wrap: wrap;
     gap: 2rem;
     width: fit-content;
-    max-width: 70rem;
+    max-width: 60rem;
     min-width: 40rem;
     justify-content: center;
 }
 
 #quizbuttons button {
-    border-radius: 1rem;
-    font-size: 2.5rem;
-    width: fit-content;
-    max-width: 30rem;
-    height: fit-content;
-    padding: 2rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  width: 20rem;
+  max-width: 20rem;
+  height: fit-content;
+  padding: 1rem;
 }
 
 #next {
@@ -263,6 +263,62 @@ button:hover {
 
 .wrong {
     background-color: rgb(146, 146, 146);
+}
+
+/* leaderboard */
+
+
+#nameentry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+#nameInput {
+  font-size: 1.5rem;
+  padding: 0.75rem 1.25rem;
+  border-radius: 1rem;
+  border: 1.5px solid rgba(255,255,255,0.4);
+  background-color: rgba(255,255,255,0.1);
+  color: white;
+  text-align: center;
+  outline: none;
+  font-family: 'nunito';
+}
+
+#nameInput::placeholder {
+  color: rgba(255,255,255,0.5);
+}
+
+#leaderboard {
+  margin-top: 2rem;
+}
+
+#leaderboardList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#leaderboardList li {
+  font-size: 1.5rem;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 0.75rem;
+  padding: 0.5rem 2rem;
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#leaderboardList li:first-child {
+  background-color: rgba(255, 200, 0, 0.25);
+  font-weight: bold;
 }
 
 
@@ -338,4 +394,18 @@ button:hover {
 
 #nunito {
     font-family: 'nunito';
+}
+
+/*//////////////////////////////////////////////////////////*/
+
+.videohero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.videohero iframe {
+    width: calc(426px * 2);
+    height: calc(240px * 2);
 }

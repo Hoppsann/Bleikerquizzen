@@ -18,6 +18,7 @@
     <div class="quizhero">
       <div id="quizhero">
         <div>
+          <h1>kombinasjonsprogrammet</h1>
             <h1>Quiz</h1>
             <p id="question"></p>
             <div id="video"></div>
@@ -31,10 +32,22 @@
         <div id="next">
         </div>
       </div>
-      <div id="results" style="display: none;">
+        <div id="results" style="display: none;">
           <h1>Du fikk</h1>
           <p id="points">1/10 riktig</p>
-      </div>
+
+          <div id="nameentry">
+            <p>Skriv inn navnet ditt for å lagre poengsummen:</p>
+            <input type="text" id="nameInput" placeholder="Navn..." maxlength="20" />
+            <button onclick="saveScore()">Lagre</button>
+          </div>
+
+          <div id="leaderboard">
+            <h2>Ledertavle</h2>
+            <ol id="leaderboardList"></ol>
+            <button onclick="clearLeaderboard()">Nullstill ledertavle</button>
+          </div>
+        </div>
     </div>
     
 
