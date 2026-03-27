@@ -230,7 +230,7 @@ function clearLeaderboard() {
 
 const homeList = document.getElementById("homeLeaderboardList");
 if (homeList) {
-  const scores = getScores().slice(0, 4);
+  const scores = getScores().slice(0, 5);
   if (scores.length === 0) {
     homeList.innerHTML = "<li style='justify-content:center'>Ingen resultater ennå</li>";
   } else {
