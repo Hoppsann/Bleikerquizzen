@@ -141,25 +141,29 @@ li:hover {
     display: flex;
 }
 
-#inforight img {
+#infoRight img {
     width: 75%;
 } 
+
+#infoRight2 img {
+    width: 40%;
+}
 
 
 #info2 {
     background-color: var(--maincolor1);
 }
 
-#infoleft h1 {
+#infoLeft h1 {
     margin: 0rem 0rem 1rem 5rem;
 }
 
-#infoleft p {
+#infoLeft p {
     margin-top: 0;
     margin-left: 5rem;
 }
 
-#infoleft {
+#infoLeft {
     width: 50%;
     height: 100%;
     display: flex;
@@ -175,7 +179,7 @@ li:hover {
     align-self: flex-end;
 }
 
-#inforight {
+#infoRight, #infoRight2 {
     display: flex;
     width: 50%;
     justify-content: center;
