@@ -490,10 +490,17 @@ button:hover {
 
 /* ///////////////////////////////////////////////////////// */
 
-.somehero {
+.somehero, .videohero {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 5rem;
+    text-align: center;
+}
+
+.somehero p, .videohero p {
+    width: 50rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
